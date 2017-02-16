@@ -1,0 +1,63 @@
+﻿#general
+edit = modifier
+delete = effacer
+cancel = annuler
+save = enregistrer
+actions = actions
+next = suivant
+prev = précédent
+search = rechercher
+search_results = résultats de la recherche
+query_too_short = texte de recherche trop court !
+
+# ------------------------- #
+
+#countries
+country = pays
+countries = pays
+name = nom
+list_of_countries = liste des pays
+add_a_country = ajouter un pays
+delete_a_country = effacer un pays
+no_country = aucun pays
+edit_a_country = modifier un pays
+the_country_has_been_saved = le pays a été enregistré.
+the_country_has_been_deleted = le pays a été effacé.
+do_you_really_want_to_delete_this_country = voulez-vous vraiment effacer ce pays
+
+#photos
+photo = photo
+photos = photos
+name = name
+shooting_date = shooting_date
+country_id = country_id
+caption = légende
+state = statut
+directory = répertoire
+list_of_photos = liste des photos
+add_a_photo = ajouter une photo
+delete_a_photo = effacer une photo
+no_photo = aucune photo
+edit_a_photo = modifier une photo
+the_photo_has_been_saved = le photo a été enregistrée.
+the_photo_has_been_deleted = le photo a été effacée.
+do_you_really_want_to_delete_this_photo = voulez-vous vraiment effacer cette photo
+
+#stages
+stage = étape
+stages = étapes
+travel_date = date
+country_id = country_id
+title = titre
+gps = gps
+story = story
+distance = distance
+list_of_stages = liste des étapes
+edit_stage = Modifier l'étape
+add_a_stage = ajouter une étape
+delete_a_stage = effacer une étape
+no_stage = aucune étape
+edit_a_stage = modifier une étape
+the_stage_has_been_saved = l'étape a été enregistré.
+the_stage_has_been_deleted = l'étape a été effacé.
+do_you_really_want_to_delete_this_stage = voulez-vous vraiment effacer cette étape

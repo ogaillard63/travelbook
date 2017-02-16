@@ -1,0 +1,59 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{#search#|ucfirst}</h3>
+			</div>
+			<div class="panel-body">
+				<form role="form" name="form_param" method="post" action="photos.php" class="search_form">
+					<div class="input-group">
+						<input class="form-control" type="hidden" name="action" value="search_results" />
+						<input class="form-control" type="text" name="query" value="{if not empty($query)}{$query}{/if}" />
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-primary">{#search#|ucfirst}</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		{if not empty($photos)}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{#search_results#|ucfirst}</h3>
+				<div class="actions pull-right">
+					<i class="fa fa-chevron-down"></i>
+					<i class="fa fa-times"></i>
+				</div>
+			</div>
+			<div class="panel-body">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>{#country#|ucfirst}</th>
+							<th>{#name#|ucfirst}</th>
+							<th>{#shooting_date#|ucfirst}</th>
+							<th>{#caption#|ucfirst}</th>
+							<th>{#state#|ucfirst}</th>
+						</tr>
+					</thead>
+					<tbody>
+						{foreach from=$photos item=photo}
+						<tr>
+							<td align="left">{$photo->country->name}</td>
+							<td align="left"><a href="photos.php?action=edit&id={$photo->id}" title="{#edit#|ucfirst}">{$photo->name|replace:"{$query}":"<strong>{$query}</strong>"}</a></td>
+							<td align="left">{$photo->shooting_date}</td>
+							<td align="left">{$photo->caption|replace:"{$query}":"<strong>{$query}</strong>"}</td>
+							<td align="left">{$photo->state}</td>
+						</tr>
+						{/foreach}
+					</tbody>
+				</table>
+				<ul class="pagination pull-left">
+					{if not empty($btn_nav)} {foreach from=$btn_nav item=btn}
+					<li{if $btn.active} class="active" {/if}><a href="photos.php?{$btn.link}">{$btn.label}</a></li>
+						{/foreach}{/if}
+				</ul>
+			</div>
+		</div>{/if}
+	</div>
+</div>

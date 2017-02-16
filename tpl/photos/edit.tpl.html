@@ -1,0 +1,48 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{if $photo->id >0}{#edit_a_photo#|ucfirst}{else}{#add_a_photo#|ucfirst}{/if}</h3>
+			</div>
+			<div class="panel-body">
+				<div class="col-md-6">
+					<form role="form" name="form_param" method="post" action="photos.php">
+						<input name="id" type="hidden" value="{$photo->id}" />
+						<input name="action" type="hidden" value="save" />
+						<input name="referer" type="hidden" value="{$referer}" />
+						<div class="form-inline">
+							<label for="{#name#}">{#name#|ucfirst}</label>
+							<input class="form-control" type="text" name="name" value="{$photo->name}" />
+							&nbsp;<label for="{#directory#}">{#directory#|ucfirst}</label>
+							<input class="form-control" type="text" name="directory" value="{$photo->directory}" />
+						</div>
+						<div class="form-inline">
+							<label for="{#shooting_date#}">{#shooting_date#|ucfirst}</label>
+							<input class="form-control" type="text" name="shooting_date" value="{$photo->shooting_date}" />
+							&nbsp;<label>{#state#|ucfirst}</label>
+							<select name="state" class="form-control">
+								<option value="1"{if $photo->state == 1} selected{/if}>Actif</option> 
+								<option value="0"{if $photo->state == 0} selected{/if}>Inactif</option> 
+							</select>
+						</div>
+						<div class="form-group">
+							<label>{#country#|ucfirst}</label> {if isset($photo->country_id)}{html_options name=country_id options=$countries selected=$photo->country_id
+							class="form-control"}{else}{html_options name=country_id options=$countries class="form-control"}{/if}
+						</div>
+						<div class="form-group">
+							<label>{#caption#|ucfirst}</label>
+							<textarea class="form-control" rows="5" name="caption">{$photo->caption}</textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary pull-right">{#save#|ucfirst}</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 centered" align="center" >
+					<img src="{$photo->directory}/hr/{$photo->name}" width="450" class="photo" />
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

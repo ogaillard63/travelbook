@@ -1,0 +1,39 @@
+<script src="tpl/assets/plugins/lightbox/js/lightbox.js"></script>
+<link href="tpl/assets/plugins/lightbox/css/lightbox.css" rel="stylesheet">
+
+<div class="row article">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2>{$stage->travel_date|date_format:"%d/%m/%Y"}</h2>
+                <h1>{$stage->title}</h1>
+            </div>
+            <div class="col-xs-4" align="right">
+                {if $stage->distance}<span class="label {if $stage->distance > 99}label-danger{else}label-primary{/if}">{$stage->distance} Km</span>{/if}
+                {if $stage->gps}<span class="label label-warning"><a href="https://www.google.fr/maps/place/{$stage->gps}" target="_blank"><img src="tpl/assets/img/sleeping-bag-32.png"/></a></span>{/if}
+                <a href="index.php?date={$prev_date}" class="btn btn-success btn-fat marginl10" {if $prev_date=="" } disabled{/if}><</a>
+                <a href="index.php?date={$next_date}" class="btn btn-primary btn-fat" {if $next_date=="" } disabled{/if}>></a>
+            </div>
+        </div>
+
+        <p class="story">{$stage->story|nl2br}</p>
+        </br>
+        <div class="row">
+            {if not empty($photos)}{foreach from=$photos item=photo}
+            <div class="col-xs-3">
+                <div class="thumbnail">
+                    <a href="{$photo->directory}hr/{$photo->name}" data-lightbox="example-1"><img src="{$photo->directory}br/{$photo->name}" alt="{$photo->name}" class="img-thumbnail"></a>
+                </div>
+                <div class="caption" style="min-height: 30px;">
+                    <p>{$photo->caption}
+                        <a class="pull-right" href="photos.php?action=edit&id={$photo->id}" title="{#edit#|ucfirst}"><i class="fa fa-pencil-square fa-lg"></i></a></p>
+                </div>
+            </div>
+            {/foreach}{/if}
+        </div>
+        <div class="row btn-group pull-right" role="group">
+            <a href="stages.php?action=search" class="btn btn-warning">{#search#|ucfirst}</a>
+            <a href="stages.php?action=edit&id={$stage->id}" class="btn btn-primary">{#edit_stage#|ucfirst}</a>
+        </div>
+    </div>
+</div>

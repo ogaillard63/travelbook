@@ -1,0 +1,50 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{#list_of_photos#|ucfirst}</h3>
+			</div>
+			<div class="panel-body">
+				{if not empty($photos)}<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>{#country#|ucfirst}</th>
+						<th>{#name#|ucfirst}</th>
+						<th>{#photo#|ucfirst}</th>
+						<th>{#shooting_date#|ucfirst}</th>
+						<th>{#caption#|ucfirst}</th>
+						<th>{#state#|ucfirst}</th>
+						<th colspan="2">{#actions#|ucfirst}</th>
+					</tr>
+				</thead>
+				<tbody>
+					{foreach from=$photos item=photo}
+					<tr>
+						<td align="left">{$photo->country->name}</td>
+						<td align="left"><img src="{$photo->directory}br/{$photo->name}" width="60" /></td>
+						<td align="left">{$photo->name}</td>
+						<td align="left">{$photo->shooting_date|date_format:"%d/%m/%Y %H:%M:%S"}</td>
+						<td align="left">{$photo->caption}</td>
+						<td align="left">{$photo->state}</td>
+						<td width="1%" align="center" nowrap="nowrap"><a class="btn btn-sm btn-success" href="photos.php?action=edit&id={$photo->id}" title="{#edit#|ucfirst}">{#edit#|ucfirst}</a></td>
+						<td width="1%" align="center" nowrap="nowrap"><a class="btn btn-sm btn-danger" href="photos.php?action=delete&id={$photo->id}" title="{#delete#|ucfirst}" onclick="return confirm('{#do_you_really_want_to_delete_this_photo#|ucfirst} ?')">{#delete#|ucfirst}</a></td>
+					</tr>
+					{/foreach}
+				</tbody>
+			</table>
+			{else}<h4>{#no_photo#}</h4>{/if}
+			<div class="panel-footer">
+				<ul class="pagination pull-left">
+					{if not empty($btn_nav)} {foreach from=$btn_nav item=btn}
+					<li{if $btn.active} class="active" {/if}><a href="photos.php?{$btn.link}">{$btn.label}</a></li>
+						{/foreach}{/if}
+				</ul>
+				<div class="btn-group pull-right">
+					<a href="photos.php?action=search" class="btn btn-success">{#search#|ucfirst}</a>
+					<a href="photos.php?action=add" class="btn btn-primary">{#add_a_photo#|ucfirst}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

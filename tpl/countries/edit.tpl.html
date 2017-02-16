@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{if $country->id >0}{#edit_a_country#|ucfirst}{else}{#add_a_country#|ucfirst}{/if}</h3>
+				<div class="actions pull-right">
+					<i class="fa fa-chevron-down"></i>
+					<i class="fa fa-times"></i>
+				</div>
+			</div>
+			<div class="panel-body">
+				<form role="form" name="form_param" method="post" action="countries.php">
+					<input name="id" type="hidden" value="{$country->id}" />
+					<input name="action" type="hidden" value="save" />
+					<div class="form-group">
+						<label for="{#name#}">{#name#|ucfirst}</label>
+						<input class="form-control" type="text" name="name" value="{$country->name}" />
+					</div>
+					<div align="right">
+						<button type="submit" class="btn btn-primary">{#save#|ucfirst}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

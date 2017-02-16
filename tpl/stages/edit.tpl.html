@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{if $stage->id >0}{#edit_a_stage#|ucfirst}{else}{#add_a_stage#|ucfirst}{/if}</h3>
+			</div>
+			<div class="panel-body">
+				<form role="form" name="form_param" method="post" action="stages.php">
+					<input name="id" type="hidden" value="{$stage->id}" />
+					<input name="action" type="hidden" value="save" />
+					<input name="referer" type="hidden" value="{$referer}" />
+					<div class="form-inline">
+						<label>{#travel_date#|ucfirst}</label>
+						<input class="form-control datepicker" type="text" name="travel_date" value="{$stage->travel_date|date_format:" %d/%m/%Y"}" />
+						<div class="pull-right"><label>{#country#|ucfirst}</label> {if isset($stage->country_id)}{html_options name=country_id options=$countries selected=$stage->country_id
+						class="form-control"}{else}{html_options name=country_id options=$countries class="form-control"}{/if}</div>
+					</div>
+					<div class="form-group">
+					</div>
+					<div class="form-group">
+						<label for="{#title#}">{#title#|ucfirst}</label>
+						<input class="form-control" type="text" name="title" value="{$stage->title}" />
+					</div>
+					<div class="form-group">
+						<label>{#story#|ucfirst}</label>
+						<textarea class="form-control" rows="15" name="story">{$stage->story}</textarea>
+					</div>
+					<div class="form-inline">
+						<label for="{#distance#}">{#distance#|ucfirst}</label>
+						<input class="form-control" type="text" name="distance" value="{$stage->distance}" />
+						&nbsp;<label for="{#gps#}">{#gps#|ucfirst}</label>
+						<input class="form-control" type="text" name="gps" value="{$stage->gps}" />
+					</div>
+					<div class="form-group pull-right">
+						<button type="submit" class="btn btn-primary">{#save#|ucfirst}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('.datepicker').datepicker({
+		language: "fr"
+	});
+</script>
