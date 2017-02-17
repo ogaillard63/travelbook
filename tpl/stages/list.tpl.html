@@ -22,8 +22,8 @@
 						<td align="left">{$stage->travel_date|date_format:"%d/%m/%Y"}</td>
 						<td align="left">{$stage->country->name}</td>
 						<td align="left">{$stage->title}</td>
-						<td align="left">{$stage->gps}</td>
-						<td align="left">{$stage->distance}</td>
+						<td align="center">{$stage->gps}</td>
+						<td align="right">{$stage->distance} km</td>
 						<td width="1%" align="center" nowrap="nowrap"><a class="btn btn-sm btn-success" href="stages.php?action=edit&id={$stage->id}" title="{#edit#|ucfirst}">{#edit#|ucfirst}</a></td>
 						<td width="1%" align="center" nowrap="nowrap"><a class="btn btn-sm btn-danger" href="stages.php?action=delete&id={$stage->id}" title="{#delete#|ucfirst}" onclick="return confirm('{#do_you_really_want_to_delete_this_stage#|ucfirst} ?')">{#delete#|ucfirst}</a></td>
 					</tr>
@@ -39,7 +39,7 @@
 				</ul>
 				<div class="btn-group pull-right">
 					<a href="stages.php?action=search" class="btn btn-success">{#search#|ucfirst}</a>
-					<a href="stages.php?action=add" class="btn btn-primary">{#add_a_photo#|ucfirst}</a>
+					<a href="stages.php?action=add" class="btn btn-primary">{#add_a_stage#|ucfirst}</a>
 				</div>
 			</div>
 		</div>

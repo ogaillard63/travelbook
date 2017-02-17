@@ -30,6 +30,7 @@ switch($action) {
 	case "add" :
 		$smarty->assign("stage", new Stage(array("id" => -1)));
 		$smarty->assign("countries", $country_manager->getCountriesForSelect());
+		$smarty->assign("referer", basename($_SERVER['HTTP_REFERER']));
 		$smarty->assign("content", "stages/edit.tpl.html");
 		$smarty->display("main.tpl.html");
 		break;
@@ -78,7 +79,7 @@ switch($action) {
 
 	default:
 		$smarty->assign("titre", $translate->__('list_of_stages'));
-		$rpp = 10;
+		$rpp = 14;
 		if (empty($page)) $page = 1; // Display first page
 		$smarty->assign("stages", $stage_manager->getStagesByPage($page, $rpp, true));
 		$pagination = new Pagination($page, $stage_manager->getMaxStages(), $rpp);

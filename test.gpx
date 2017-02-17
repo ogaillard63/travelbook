@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<gpx creator="WTracks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+  <name>Travel Book</name>
+  <time>2017-02-17T01-58-20Z</time>
+<bounds minlat="48.128152606709925" minlon="-2.940230664062483" maxlat="48.893255674511764" maxlon="-0.3117516601562329"/></metadata>
+<trk><name>test</name><trkseg>
+  <trkpt lat="48.86403720372053" lon="2.3435211181640625"></trkpt>
+  <trkpt lat="48.64289099833627" lon="1.844329833984375"></trkpt>
+  <trkpt lat="48.43011178780495" lon="1.494140625"></trkpt>
+  <trkpt lat="48.31973404047174" lon="0.8349609375"></trkpt>
+  <trkpt lat="48.45015476309973" lon="0.119476318359375"></trkpt>
+  <trkpt lat="48.59477574898104" lon="-0.638580322265625"></trkpt>
+  <trkpt lat="48.63744629097557" lon="-1.4337158203125"></trkpt>
+  <trkpt lat="48.63563125791997" lon="-2.03521728515625"></trkpt>
+  <trkpt lat="48.513875259211225" lon="-2.764434814453125"></trkpt>
+</trkseg></trk></gpx>

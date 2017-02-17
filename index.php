@@ -20,6 +20,6 @@ $smarty->assign("prev_date", $stage_manager->getPrevDateStage($date));
 $smarty->assign("stage", $stage_manager->getStageForDate($date));
 $smarty->assign("photos", $photo_manager->getPhotosForDate($date));
 
-$smarty->assign("content", "misc/homepage.tpl.html");
+$smarty->assign("content", "misc/stories.tpl.html");
 $smarty->display("main.tpl.html");
 ?>

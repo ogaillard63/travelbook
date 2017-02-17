@@ -1,39 +1,96 @@
-<script src="tpl/assets/plugins/lightbox/js/lightbox.js"></script>
-<link href="tpl/assets/plugins/lightbox/css/lightbox.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://openlayers.org/en/v4.0.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script src="https://openlayers.org/en/v4.0.1/build/ol.js" type="text/javascript"></script>
 
-<div class="row article">
-    <div class="col-xs-12">
-        <div class="row">
-            <div class="col-xs-8">
-                <h2>{$stage->travel_date|date_format:"%d/%m/%Y"}</h2>
-                <h1>{$stage->title}</h1>
-            </div>
-            <div class="col-xs-4" align="right">
-                {if $stage->distance}<span class="label {if $stage->distance > 99}label-danger{else}label-primary{/if}">{$stage->distance} Km</span>{/if}
-                {if $stage->gps}<span class="label label-warning"><a href="https://www.google.fr/maps/place/{$stage->gps}" target="_blank"><img src="tpl/assets/img/sleeping-bag-32.png"/></a></span>{/if}
-                <a href="index.php?date={$prev_date}" class="btn btn-success btn-fat marginl10" {if $prev_date=="" } disabled{/if}><</a>
-                <a href="index.php?date={$next_date}" class="btn btn-primary btn-fat" {if $next_date=="" } disabled{/if}>></a>
-            </div>
-        </div>
+    <h2>Travel Book</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      
+      var style = {
+        'Point': new ol.style.Style({
+          image: new ol.style.Circle({
+            fill: new ol.style.Fill({
+              color: '#00f'
+            }),
+            radius: 5,
+            stroke: new ol.style.Stroke({
+              color: '#ff0',
+              width: 10
+            })
+          })
+        }),
+        'LineString': new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: '#0f0',
+            width: 3
+          })
+        }),
+        'MultiLineString': new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: '#F00',
+            width: 6
+          })
+        })
+      };
 
-        <p class="story">{$stage->story|nl2br}</p>
-        </br>
-        <div class="row">
-            {if not empty($photos)}{foreach from=$photos item=photo}
-            <div class="col-xs-3">
-                <div class="thumbnail">
-                    <a href="{$photo->directory}hr/{$photo->name}" data-lightbox="example-1"><img src="{$photo->directory}br/{$photo->name}" alt="{$photo->name}" class="img-thumbnail"></a>
-                </div>
-                <div class="caption" style="min-height: 30px;">
-                    <p>{$photo->caption}
-                        <a class="pull-right" href="photos.php?action=edit&id={$photo->id}" title="{#edit#|ucfirst}"><i class="fa fa-pencil-square fa-lg"></i></a></p>
-                </div>
-            </div>
-            {/foreach}{/if}
-        </div>
-        <div class="row btn-group pull-right" role="group">
-            <a href="stages.php?action=search" class="btn btn-warning">{#search#|ucfirst}</a>
-            <a href="stages.php?action=edit&id={$stage->id}" class="btn btn-primary">{#edit_stage#|ucfirst}</a>
-        </div>
-    </div>
-</div>
+      var vector = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          url: 'test.gpx',
+          format: new ol.format.GPX()
+        }),
+        style: function(feature) {
+          return style[feature.getGeometry().getType()];
+        }
+      });
+      
+      
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }), vector ],
+        view: new ol.View({
+          //center: [-7916041.528716288, 5228379.045749711],
+          center: ol.proj.fromLonLat([2.348371,48.853442]),
+          zoom: 7
+        })
+      });
+
+       var displayFeatureInfo = function(pixel) {
+        var features = [];
+        map.forEachFeatureAtPixel(pixel, function(feature) {
+          features.push(feature);
+        });
+        if (features.length > 0) {
+          var info = [];
+          var i, ii;
+          for (i = 0, ii = features.length; i < ii; ++i) {
+            info.push(features[i].get('desc'));
+          }
+          document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
+          map.getTarget().style.cursor = 'pointer';
+        } else {
+          document.getElementById('info').innerHTML = '&nbsp;';
+          map.getTarget().style.cursor = '';
+        }
+      };
+
+      map.on('pointermove', function(evt) {
+        if (evt.dragging) {
+          return;
+        }
+        var pixel = map.getEventPixel(evt.originalEvent);
+        displayFeatureInfo(pixel);
+      });
+
+      map.on('click', function(evt) {
+        displayFeatureInfo(evt.pixel);
+      });
+    </script>
