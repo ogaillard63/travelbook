@@ -19,7 +19,7 @@
 				<tbody>
 					{foreach from=$stages item=stage}
 					<tr>
-						<td align="left">{$stage->travel_date|date_format:"%d/%m/%Y"}</td>
+						<td align="left"><a href="index.php?date={$stage->travel_date}">{$stage->travel_date|date_format:"%d/%m/%Y"}</a></td>
 						<td align="left">{$stage->country->name}</td>
 						<td align="left">{$stage->title}</td>
 						<td align="center">{$stage->gps}</td>

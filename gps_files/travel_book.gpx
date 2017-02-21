@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<gpx creator="WTracks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+  <name>Travel Book</name>
+  <bounds minlat="42.485556" minlon="-3.830044" maxlat="48.789389" maxlon="18.404272"/>
+</metadata>
+<wpt lat="48.853393" lon="2.348795">
+<desc><![CDATA[Paris]]></desc>
+</wpt>
+<wpt lat="48.598888" lon="1.918631">
+<desc><![CDATA[Paris - Forêt de Rambouillet]]></desc>
+</wpt>
+<wpt lat="48.320759" lon="1.308914">
+<desc><![CDATA[Forêt de Rambouillet - Blandainville]]></desc>
+</wpt>
+<wpt lat="48.500622" lon="0.565501">
+<desc><![CDATA[Blandainville - Mortagne-au-Perche]]></desc>
+</wpt>
+<wpt lat="48.487363" lon="-0.050478">
+<desc><![CDATA[Mortagne-au-Perche - La Roche Mabille]]></desc>
+</wpt>
+<wpt lat="48.588377" lon="-0.651040">
+<desc><![CDATA[ La Roche Mabille - Domfront]]></desc>
+</wpt>
+<wpt lat="48.631074" lon="-1.436168">
+<desc><![CDATA[Domfront - Courtils]]></desc>
+</wpt>
+<wpt lat="48.677149" lon="-1.967031">
+<desc><![CDATA[Courtils - Saint-Malo]]></desc>
+</wpt>
+<wpt lat="48.639739" lon="-2.317652">
+<desc><![CDATA[Saint-Malo - Cap Fréhel]]></desc>
+</wpt>
+<wpt lat="48.519257" lon="-2.708927">
+<desc><![CDATA[Cap Fréhel - Baie de Saint-Brieuc]]></desc>
+</wpt>
+<wpt lat="48.754530" lon="-2.985176">
+<desc><![CDATA[Baie de Saint-Brieuc - Plouézec]]></desc>
+</wpt>
+<wpt lat="48.789389" lon="-3.541992">
+<desc><![CDATA[Plouézec - Pleumeur-Bodou]]></desc>
+</wpt>
+<wpt lat="48.688444" lon="-3.700096">
+<desc><![CDATA[Pleumeur-Bodou - Guimaëc]]></desc>
+</wpt>
+<wpt lat="48.585627" lon="-3.830044">
+<desc><![CDATA[Guimaëc - Morlaix]]></desc>
+</wpt>
+<wpt lat="48.252436" lon="-3.450860">
+<desc><![CDATA[Morlaix - Carhaix - Quéhélen]]></desc>
+</wpt>
+<wpt lat="48.121437" lon="-3.004714">
+<desc><![CDATA[Quéhélen - Neulliac]]></desc>
+</wpt>
+<wpt lat="47.905592" lon="-2.472451">
+<desc><![CDATA[Neulliac - Guillac]]></desc>
+</wpt>
+<wpt lat="47.474244" lon="-1.873894">
+<desc><![CDATA[Guillac - Redon - Guenrouet]]></desc>
+</wpt>
+<wpt lat="47.205917" lon="-1.789210">
+<desc><![CDATA[Guenrouet - Nantes - Le Pellerin]]></desc>
+</wpt>
+<wpt lat="47.164311" lon="-2.135858">
+<desc><![CDATA[Le Pellerin - Saint-Michel-Chef-Chef]]></desc>
+</wpt>
+<wpt lat="46.916122" lon="-2.101024">
+<desc><![CDATA[Saint-Michel-Chef-Chef - Beauvoir-sur-Mer]]></desc>
+</wpt>
+<wpt lat="46.860968" lon="-2.137469">
+<desc><![CDATA[Beauvoir-sur-Mer - Ile de Noirmoutier - Barre des Monts ]]></desc>
+</wpt>
+<wpt lat="46.524560" lon="-1.818090">
+<desc><![CDATA[Barre des Monts - Olonne-sur-Mer]]></desc>
+</wpt>
+<wpt lat="46.378013" lon="-1.483568">
+<desc><![CDATA[Olonne-sur-Mer - Longeville-sur-Mer]]></desc>
+</wpt>
+<wpt lat="46.176342" lon="-1.302883">
+<desc><![CDATA[Longeville-sur-Mer - La Flotte (île de Ré)]]></desc>
+</wpt>
+<wpt lat="46.176342" lon="-1.302883">
+<desc><![CDATA[La Flotte (île de Ré)]]></desc>
+</wpt>
+<wpt lat="45.886658" lon="-0.938921">
+<desc><![CDATA[La Flotte (île de Ré) - Saint-Agnant]]></desc>
+</wpt>
+<wpt lat="45.483643" lon="-1.146317">
+<desc><![CDATA[Saint-Agnant - Soulac-sur-Mer]]></desc>
+</wpt>
+<wpt lat="45.483643" lon="-1.146317">
+<desc><![CDATA[Soulac-sur-Mer]]></desc>
+</wpt>
+<wpt lat="45.205734" lon="-1.172094">
+<desc><![CDATA[Soulac-sur-Mer - Hourtin-plage]]></desc>
+</wpt>
+<wpt lat="44.925523" lon="-0.814039">
+<desc><![CDATA[Hourtin-Plage - Salaunes]]></desc>
+</wpt>
+<wpt lat="44.784892" lon="-0.208262">
+<desc><![CDATA[Salaunes - Naujan-et-Postiac]]></desc>
+</wpt>
+<wpt lat="44.256066" lon="0.307830">
+<desc><![CDATA[Naujan-et-Postiac - Buzet-en-Baïse]]></desc>
+</wpt>
+<wpt lat="43.979580" lon="1.216030">
+<desc><![CDATA[Buzet-en-Baïse - Montech]]></desc>
+</wpt>
+<wpt lat="43.688684" lon="1.397514">
+<desc><![CDATA[Montech - Fenouillet]]></desc>
+</wpt>
+<wpt lat="43.316153" lon="2.011559">
+<desc><![CDATA[Fenouillet -Saint-Martin-Lalande]]></desc>
+</wpt>
+<wpt lat="43.299154" lon="2.672935">
+<desc><![CDATA[Saint-Martin-Lalande - Pépieux]]></desc>
+</wpt>
+<wpt lat="43.461990" lon="3.820756">
+<desc><![CDATA[Pépieux - Frontignan]]></desc>
+</wpt>
+<wpt lat="43.743689" lon="4.516712">
+<desc><![CDATA[Frontignan - Bellegarde]]></desc>
+</wpt>
+<wpt lat="43.850087" lon="5.481430">
+<desc><![CDATA[Bellegarde - Saint-Martin-de-Castillon]]></desc>
+</wpt>
+<wpt lat="43.654499" lon="6.106214">
+<desc><![CDATA[Saint-Martin-de-Castillon - Montmeyan]]></desc>
+</wpt>
+<wpt lat="43.456338" lon="6.881948">
+<desc><![CDATA[Montmeyan - Saint-Raphaël]]></desc>
+</wpt>
+<wpt lat="43.753455" lon="7.381370">
+<desc><![CDATA[Saint-Raphaël - La Trinité]]></desc>
+</wpt>
+<wpt lat="43.785514" lon="7.631364">
+<desc><![CDATA[La Trinité - Camporosso ]]></desc>
+</wpt>
+<wpt lat="43.954797" lon="7.868747">
+<desc><![CDATA[Camporosso - Carpasio ]]></desc>
+</wpt>
+<wpt lat="44.191059" lon="8.128482">
+<desc><![CDATA[Carpasio - Bardineto ]]></desc>
+</wpt>
+<wpt lat="44.443700" lon="7.699367">
+<desc><![CDATA[Bardineto - Coni]]></desc>
+</wpt>
+<wpt lat="45.101852" lon="7.700628">
+<desc><![CDATA[Coni - Turin]]></desc>
+</wpt>
+<wpt lat="45.622961" lon="13.820030">
+<desc><![CDATA[Turin - Trieste]]></desc>
+</wpt>
+<wpt lat="45.458388" lon="13.608093">
+<desc><![CDATA[Trieste - Sveta Marija]]></desc>
+</wpt>
+<wpt lat="45.251156" lon="13.828172">
+<desc><![CDATA[Sveta Marija - Pazin]]></desc>
+</wpt>
+<wpt lat="45.345148" lon="14.311845">
+<desc><![CDATA[Pazin - Opatija]]></desc>
+</wpt>
+<wpt lat="45.136628" lon="14.527167">
+<desc><![CDATA[Opatija - Malinska]]></desc>
+</wpt>
+<wpt lat="44.760735" lon="14.731921">
+<desc><![CDATA[Malinska - Ile de Rab (Kampor)]]></desc>
+</wpt>
+<wpt lat="44.473686" lon="15.009652">
+<desc><![CDATA[Ile de Rab (Kampor) - Ile de Pag (Pag)]]></desc>
+</wpt>
+<wpt lat="44.128548" lon="15.249743">
+<desc><![CDATA[ Ile de Pag (Pag) - Zadar]]></desc>
+</wpt>
+<wpt lat="44.128548" lon="15.249743">
+<desc><![CDATA[Zadar]]></desc>
+</wpt>
+<wpt lat="43.833361" lon="15.635652">
+<desc><![CDATA[Zadar - Pirovac]]></desc>
+</wpt>
+<wpt lat="43.516519" lon="16.504549">
+<desc><![CDATA[Pirovac - Split]]></desc>
+</wpt>
+<wpt lat="43.516519" lon="16.504549">
+<desc><![CDATA[Split]]></desc>
+</wpt>
+<wpt lat="43.461441" lon="16.695616">
+<desc><![CDATA[Split - Zakucac]]></desc>
+</wpt>
+<wpt lat="43.01247" lon="17.4698">
+<desc><![CDATA[Croatie]]></desc>
+</wpt>
+<wpt lat="42.72367" lon="17.96097">
+<desc><![CDATA[- Trsteno]]></desc>
+</wpt>
+<wpt lat="42.648928" lon="18.102069">
+<desc><![CDATA[Trsteno - Dubrovnik ]]></desc>
+</wpt>
+<wpt lat="42.485556" lon="18.404272">
+<desc><![CDATA[Dubrovnik - Mikulici]]></desc>
+</wpt>
+<rte>
+<desc><![CDATA[ItinÃ©raire]]></desc>
+<rtept lat="48.853393" lon="2.348795">
+<desc><![CDATA[Paris]]></desc>
+</rtept>
+<rtept lat="48.598888" lon="1.918631">
+<desc><![CDATA[Paris - Forêt de Rambouillet]]></desc>
+</rtept>
+<rtept lat="48.320759" lon="1.308914">
+<desc><![CDATA[Forêt de Rambouillet - Blandainville]]></desc>
+</rtept>
+<rtept lat="48.500622" lon="0.565501">
+<desc><![CDATA[Blandainville - Mortagne-au-Perche]]></desc>
+</rtept>
+<rtept lat="48.487363" lon="-0.050478">
+<desc><![CDATA[Mortagne-au-Perche - La Roche Mabille]]></desc>
+</rtept>
+<rtept lat="48.588377" lon="-0.651040">
+<desc><![CDATA[ La Roche Mabille - Domfront]]></desc>
+</rtept>
+<rtept lat="48.631074" lon="-1.436168">
+<desc><![CDATA[Domfront - Courtils]]></desc>
+</rtept>
+<rtept lat="48.677149" lon="-1.967031">
+<desc><![CDATA[Courtils - Saint-Malo]]></desc>
+</rtept>
+<rtept lat="48.639739" lon="-2.317652">
+<desc><![CDATA[Saint-Malo - Cap Fréhel]]></desc>
+</rtept>
+<rtept lat="48.519257" lon="-2.708927">
+<desc><![CDATA[Cap Fréhel - Baie de Saint-Brieuc]]></desc>
+</rtept>
+<rtept lat="48.754530" lon="-2.985176">
+<desc><![CDATA[Baie de Saint-Brieuc - Plouézec]]></desc>
+</rtept>
+<rtept lat="48.789389" lon="-3.541992">
+<desc><![CDATA[Plouézec - Pleumeur-Bodou]]></desc>
+</rtept>
+<rtept lat="48.688444" lon="-3.700096">
+<desc><![CDATA[Pleumeur-Bodou - Guimaëc]]></desc>
+</rtept>
+<rtept lat="48.585627" lon="-3.830044">
+<desc><![CDATA[Guimaëc - Morlaix]]></desc>
+</rtept>
+<rtept lat="48.252436" lon="-3.450860">
+<desc><![CDATA[Morlaix - Carhaix - Quéhélen]]></desc>
+</rtept>
+<rtept lat="48.121437" lon="-3.004714">
+<desc><![CDATA[Quéhélen - Neulliac]]></desc>
+</rtept>
+<rtept lat="47.905592" lon="-2.472451">
+<desc><![CDATA[Neulliac - Guillac]]></desc>
+</rtept>
+<rtept lat="47.474244" lon="-1.873894">
+<desc><![CDATA[Guillac - Redon - Guenrouet]]></desc>
+</rtept>
+<rtept lat="47.205917" lon="-1.789210">
+<desc><![CDATA[Guenrouet - Nantes - Le Pellerin]]></desc>
+</rtept>
+<rtept lat="47.164311" lon="-2.135858">
+<desc><![CDATA[Le Pellerin - Saint-Michel-Chef-Chef]]></desc>
+</rtept>
+<rtept lat="46.916122" lon="-2.101024">
+<desc><![CDATA[Saint-Michel-Chef-Chef - Beauvoir-sur-Mer]]></desc>
+</rtept>
+<rtept lat="46.860968" lon="-2.137469">
+<desc><![CDATA[Beauvoir-sur-Mer - Ile de Noirmoutier - Barre des Monts ]]></desc>
+</rtept>
+<rtept lat="46.524560" lon="-1.818090">
+<desc><![CDATA[Barre des Monts - Olonne-sur-Mer]]></desc>
+</rtept>
+<rtept lat="46.378013" lon="-1.483568">
+<desc><![CDATA[Olonne-sur-Mer - Longeville-sur-Mer]]></desc>
+</rtept>
+<rtept lat="46.176342" lon="-1.302883">
+<desc><![CDATA[Longeville-sur-Mer - La Flotte (île de Ré)]]></desc>
+</rtept>
+<rtept lat="46.176342" lon="-1.302883">
+<desc><![CDATA[La Flotte (île de Ré)]]></desc>
+</rtept>
+<rtept lat="45.886658" lon="-0.938921">
+<desc><![CDATA[La Flotte (île de Ré) - Saint-Agnant]]></desc>
+</rtept>
+<rtept lat="45.483643" lon="-1.146317">
+<desc><![CDATA[Saint-Agnant - Soulac-sur-Mer]]></desc>
+</rtept>
+<rtept lat="45.483643" lon="-1.146317">
+<desc><![CDATA[Soulac-sur-Mer]]></desc>
+</rtept>
+<rtept lat="45.205734" lon="-1.172094">
+<desc><![CDATA[Soulac-sur-Mer - Hourtin-plage]]></desc>
+</rtept>
+<rtept lat="44.925523" lon="-0.814039">
+<desc><![CDATA[Hourtin-Plage - Salaunes]]></desc>
+</rtept>
+<rtept lat="44.784892" lon="-0.208262">
+<desc><![CDATA[Salaunes - Naujan-et-Postiac]]></desc>
+</rtept>
+<rtept lat="44.256066" lon="0.307830">
+<desc><![CDATA[Naujan-et-Postiac - Buzet-en-Baïse]]></desc>
+</rtept>
+<rtept lat="43.979580" lon="1.216030">
+<desc><![CDATA[Buzet-en-Baïse - Montech]]></desc>
+</rtept>
+<rtept lat="43.688684" lon="1.397514">
+<desc><![CDATA[Montech - Fenouillet]]></desc>
+</rtept>
+<rtept lat="43.316153" lon="2.011559">
+<desc><![CDATA[Fenouillet -Saint-Martin-Lalande]]></desc>
+</rtept>
+<rtept lat="43.299154" lon="2.672935">
+<desc><![CDATA[Saint-Martin-Lalande - Pépieux]]></desc>
+</rtept>
+<rtept lat="43.461990" lon="3.820756">
+<desc><![CDATA[Pépieux - Frontignan]]></desc>
+</rtept>
+<rtept lat="43.743689" lon="4.516712">
+<desc><![CDATA[Frontignan - Bellegarde]]></desc>
+</rtept>
+<rtept lat="43.850087" lon="5.481430">
+<desc><![CDATA[Bellegarde - Saint-Martin-de-Castillon]]></desc>
+</rtept>
+<rtept lat="43.654499" lon="6.106214">
+<desc><![CDATA[Saint-Martin-de-Castillon - Montmeyan]]></desc>
+</rtept>
+<rtept lat="43.456338" lon="6.881948">
+<desc><![CDATA[Montmeyan - Saint-Raphaël]]></desc>
+</rtept>
+<rtept lat="43.753455" lon="7.381370">
+<desc><![CDATA[Saint-Raphaël - La Trinité]]></desc>
+</rtept>
+<rtept lat="43.785514" lon="7.631364">
+<desc><![CDATA[La Trinité - Camporosso ]]></desc>
+</rtept>
+<rtept lat="43.954797" lon="7.868747">
+<desc><![CDATA[Camporosso - Carpasio ]]></desc>
+</rtept>
+<rtept lat="44.191059" lon="8.128482">
+<desc><![CDATA[Carpasio - Bardineto ]]></desc>
+</rtept>
+<rtept lat="44.443700" lon="7.699367">
+<desc><![CDATA[Bardineto - Coni]]></desc>
+</rtept>
+<rtept lat="45.101852" lon="7.700628">
+<desc><![CDATA[Coni - Turin]]></desc>
+</rtept>
+<rtept lat="45.622961" lon="13.820030">
+<desc><![CDATA[Turin - Trieste]]></desc>
+</rtept>
+<rtept lat="45.458388" lon="13.608093">
+<desc><![CDATA[Trieste - Sveta Marija]]></desc>
+</rtept>
+<rtept lat="45.251156" lon="13.828172">
+<desc><![CDATA[Sveta Marija - Pazin]]></desc>
+</rtept>
+<rtept lat="45.345148" lon="14.311845">
+<desc><![CDATA[Pazin - Opatija]]></desc>
+</rtept>
+<rtept lat="45.136628" lon="14.527167">
+<desc><![CDATA[Opatija - Malinska]]></desc>
+</rtept>
+<rtept lat="44.760735" lon="14.731921">
+<desc><![CDATA[Malinska - Ile de Rab (Kampor)]]></desc>
+</rtept>
+<rtept lat="44.473686" lon="15.009652">
+<desc><![CDATA[Ile de Rab (Kampor) - Ile de Pag (Pag)]]></desc>
+</rtept>
+<rtept lat="44.128548" lon="15.249743">
+<desc><![CDATA[ Ile de Pag (Pag) - Zadar]]></desc>
+</rtept>
+<rtept lat="44.128548" lon="15.249743">
+<desc><![CDATA[Zadar]]></desc>
+</rtept>
+<rtept lat="43.833361" lon="15.635652">
+<desc><![CDATA[Zadar - Pirovac]]></desc>
+</rtept>
+<rtept lat="43.516519" lon="16.504549">
+<desc><![CDATA[Pirovac - Split]]></desc>
+</rtept>
+<rtept lat="43.516519" lon="16.504549">
+<desc><![CDATA[Split]]></desc>
+</rtept>
+<rtept lat="43.461441" lon="16.695616">
+<desc><![CDATA[Split - Zakucac]]></desc>
+</rtept>
+<rtept lat="43.01247" lon="17.4698">
+<desc><![CDATA[Croatie]]></desc>
+</rtept>
+<rtept lat="42.72367" lon="17.96097">
+<desc><![CDATA[- Trsteno]]></desc>
+</rtept>
+<rtept lat="42.648928" lon="18.102069">
+<desc><![CDATA[Trsteno - Dubrovnik ]]></desc>
+</rtept>
+<rtept lat="42.485556" lon="18.404272">
+<desc><![CDATA[Dubrovnik - Mikulici]]></desc>
+</rtept>
+</rte>
+</gpx>

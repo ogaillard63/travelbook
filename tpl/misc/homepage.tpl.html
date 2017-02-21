@@ -8,40 +8,44 @@
     </style>
     <script src="https://openlayers.org/en/v4.0.1/build/ol.js" type="text/javascript"></script>
 
-    <h2>Travel Book</h2>
+    <h2>Itinéraires</h2>
     <div id="map" class="map"></div>
+    <div id="info">&nbsp;</div>
+    
     <script type="text/javascript">
       
       var style = {
         'Point': new ol.style.Style({
           image: new ol.style.Circle({
             fill: new ol.style.Fill({
-              color: '#00f'
+              color: 'white'
             }),
-            radius: 5,
+            radius: 4,
             stroke: new ol.style.Stroke({
-              color: '#ff0',
-              width: 10
+              color: '#283c70',
+              width: 3
             })
           })
         }),
         'LineString': new ol.style.Style({
           stroke: new ol.style.Stroke({
-            color: '#0f0',
+            lineCap: "butt",
+            color: '#f44242',
             width: 3
           })
         }),
         'MultiLineString': new ol.style.Style({
           stroke: new ol.style.Stroke({
-            color: '#F00',
-            width: 6
+            lineCap: "butt",
+            color: '#90c134',
+            width: 3
           })
         })
       };
 
       var vector = new ol.layer.Vector({
         source: new ol.source.Vector({
-          url: 'test.gpx',
+          url: '{$gpx_filepath}',
           format: new ol.format.GPX()
         }),
         style: function(feature) {
@@ -49,17 +53,19 @@
         }
       });
       
-      
+      var raster = new ol.layer.Tile({
+        source: new ol.source.BingMaps({
+          imagerySet: 'Road',
+          key: 'Asz0F11R6wffwt0oUTGoFBlRuIGOPHeFfrTnN231vGqfAs7VfHR4Gfyu5Kl00FbY',
+        })
+      });
+
       var map = new ol.Map({
         target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }), vector ],
+        layers: [raster, vector ],
         view: new ol.View({
-          //center: [-7916041.528716288, 5228379.045749711],
           center: ol.proj.fromLonLat([2.348371,48.853442]),
-          zoom: 7
+          zoom: 6
         })
       });
 
@@ -69,28 +75,24 @@
           features.push(feature);
         });
         if (features.length > 0) {
-          var info = [];
-          var i, ii;
-          for (i = 0, ii = features.length; i < ii; ++i) {
-            info.push(features[i].get('desc'));
-          }
-          document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
-          map.getTarget().style.cursor = 'pointer';
-        } else {
-          document.getElementById('info').innerHTML = '&nbsp;';
-          map.getTarget().style.cursor = '';
-        }
+          var info = features[0].get('desc');
+          if (info) document.getElementById('info').innerHTML = info;
+        } 
       };
 
       map.on('pointermove', function(evt) {
+        var pixel = map.getEventPixel(evt.originalEvent);
+        var hit = map.hasFeatureAtPixel(pixel);
+        map.getViewport().style.cursor = hit ? 'pointer' : '';
         if (evt.dragging) {
           return;
         }
-        var pixel = map.getEventPixel(evt.originalEvent);
-        displayFeatureInfo(pixel);
       });
 
       map.on('click', function(evt) {
         displayFeatureInfo(evt.pixel);
       });
     </script>
+
+
+    
